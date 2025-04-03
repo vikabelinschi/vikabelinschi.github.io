@@ -1,0 +1,32 @@
+title: iOS Development Guide
+description: A comprehensive guide to modern iOS development through building an Unsplash app
+baseurl: "" # If your site is in a subdirectory, set it here (e.g., /repo-name)
+url: "" # Your site's base hostname & protocol
+
+# Build settings
+markdown: kramdown
+#theme: jekyll-theme-minimal  # Removing theme setting
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+
+# GitHub Pages settings
+plugins:
+  - jekyll-seo-tag
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - scripts
+
+# Default layouts for different content types
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: "default"
